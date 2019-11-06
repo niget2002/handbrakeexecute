@@ -18,6 +18,7 @@ movedFile = 'processed/'+inFile
 
 print('Processing %s to %s' % (inFile,outFile))
 returncode  = subprocess.run(runstr.format(inFile,outFile), shell=True)
+print('RetrunCode: %s' % returncode)
 time.sleep(5)
 print('Moving',inFile)
 os.rename(inFile,movedFile)
