@@ -13,7 +13,7 @@ runstr = '"HandBrakeCLI" -i "{0}" -o "{1}" --preset-import-file "HQ 1080p30 Surr
 inFile = rootdir+FILENAME
 pathname, noPath = os.path.split(inFile)
 fileName, fileExtension = os.path.splitext(noPath)
-outFile = 'output/'+fileName+'.mp4'
+outFile = 'output/'+fileName+'.mkv'
 movedFile = 'processed/'+inFile
 
 print('Processing %s to %s' % (inFile,outFile))

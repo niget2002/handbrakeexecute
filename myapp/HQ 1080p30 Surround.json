@@ -14,11 +14,11 @@
       ],
       "AudioList" : [
         {
-          "AudioBitrate" : 224,
+          "AudioBitrate" : 640,
           "AudioCompressionLevel" : -1,
           "AudioDitherMethod" : "auto",
-          "AudioEncoder" : "ca_aac",
-          "AudioMixdown" : "7point1",
+          "AudioEncoder" : "copy:ac3",
+          "AudioMixdown" : "none",
           "AudioNormalizeMixLevel" : false,
           "AudioSamplerate" : "auto",
           "AudioTrackDRCSlider" : 0,
