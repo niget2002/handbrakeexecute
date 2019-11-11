@@ -2,6 +2,7 @@ import os
 import time
 import subprocess
 import sys
+import shutil
 
 fileList = []
 #rootdir = input("Root Dir: ")
@@ -14,11 +15,11 @@ inFile = rootdir+FILENAME
 pathname, noPath = os.path.split(inFile)
 fileName, fileExtension = os.path.splitext(noPath)
 outFile = 'output/'+fileName+'.mkv'
-movedFile = 'processed/'+inFile
+movedFile = 'processed/'+FILENAME
 
 print('Processing %s to %s' % (inFile,outFile))
 returncode  = subprocess.run(runstr.format(inFile,outFile), shell=True)
 print('RetrunCode: %s' % returncode)
 time.sleep(5)
-print('Moving',inFile)
-os.rename(inFile,movedFile)
+print('Moving', inFile)
+shutil.move(inFile, movedFile)
